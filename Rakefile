@@ -1,5 +1,6 @@
 require 'bundler/setup'
 require 'bundler/gem_tasks'
+require 'ci/reporter/rake/minitest'
 
 task :default => :spec
 
@@ -10,6 +11,8 @@ Rake::TestTask.new(:spec) do |spec|
   spec.verbose = true
   spec.warning = true
 end
+
+task :spec => 'ci:setup:minitest'
 
 require 'yard'
 YARD::Rake::YardocTask.new

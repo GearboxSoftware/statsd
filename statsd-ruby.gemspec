@@ -13,7 +13,7 @@ Gem::Specification.new("statsd-ruby", "1.2.1.gbx1") do |s|
   s.extra_rdoc_files = %w[LICENSE.txt README.rdoc]
 
   if $0 =~ /gem/ # If running under rubygems (building), otherwise, just leave
-    s.files         = %w(.document .gitignore .travis.yml Gemfile LICENSE.txt README.rdoc Rakefile lib/statsd-ruby.rb lib/statsd.rb spec/helper.rb spec/statsd_admin_spec.rb spec/statsd_spec.rb statsd-ruby.gemspec)
+    s.files         = %w(.document .travis.yml Gemfile LICENSE.txt README.rdoc Rakefile lib/statsd-ruby.rb lib/statsd.rb spec/helper.rb spec/statsd_admin_spec.rb spec/statsd_spec.rb statsd-ruby.gemspec)
     s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   end
 
